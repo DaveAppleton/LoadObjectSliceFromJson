@@ -1,0 +1,34 @@
+[
+    {
+		"Source": "sensor",
+		"What": "temp",
+		"Condition": "GT",
+		"Value": "35",
+		"Host": "sensor",
+		"Action": "REDON"
+    },
+    {
+		"Source": "sensor",
+		"What": "temp",
+		"Condition": "LE",
+		"Value": "35",
+		"Host": "sensor",
+		"Action": "REDOFF"
+    },
+    {
+		"Source": "host",
+		"What": "sensoralarm",
+		"Condition": "NIL",
+		"Value": "1",
+		"Host": "sensor",
+		"Action": "BLUEON"
+    },
+    {
+		"Source": "host",
+		"What": "sensoralarm",
+		"Condition": "NIL",
+		"Value": "0",
+		"Host": "sensor",
+		"Action": "BLUOFF"
+    }
+ ]
